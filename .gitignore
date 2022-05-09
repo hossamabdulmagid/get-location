@@ -1,32 +1,42 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Logs
+../base/logs
+*.log
+npm-debug.log*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn integrity file
+.yarn-integrity
+
+# IntelliJ IDE
 .idea
 
-/.idea
-/.idea/.gitignore
-/.idea/alog.iml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/modules.xml
-/.idea/vagrant.xml
-/.idea/vcs.xml
+# Build directory
+dist
 
-# testing
-/coverage
+# Dotenv configuration
+.env
 
-# production
-/build
+# Tests
+coverage
+.nyc_output
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Vim swp files
+*.swp
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+.vscode
+.idea
+
+# VisualStudioCode Patch
+**/.history
+
+#prettierignore
+.prettierignore
